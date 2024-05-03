@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Ce projet consiste à développer un Pokédex interactif en utilisant React et l'API publique\r pokebuildapi pour afficher les détails des Pokémon et permettre la recherche de Pokémon\r par leur nom. En se concentrant sur la création d'une interface conviviale avec des styles CSS\r purs ou éventuellement avec Bootstrap CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yetoria/REACT-Pokedex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yetoria/REACT-Pokedex/issues"
+  },
+  "homepage": "https://github.com/yetoria/REACT-Pokedex#readme"
+}

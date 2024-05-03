@@ -1,26 +1,20 @@
 import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PokemonList from './components/PokemonList';
 import PokemonDetails from './components/PokemonDetails';
-import SearchBar from './components/SearchBar'; 
-function App() {
-  const [selectedPokemonId, setSelectedPokemonId] = useState(1); 
-  const [searchQuery, setSearchQuery] = useState('');
 
-  const handleSearchSubmit = (event) => {
-    event.preventDefault();
-  };
+
+function App() {
+  
 
   return (
     <div className="App">
-      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} onSubmit={handleSearchSubmit} />
-      <div className="row">
-        <div className="col-md-6">
-          <PokemonList />
-        </div>
-        <div className="col-md-6">
-          <PokemonDetails pokemonId={selectedPokemonId} />
-        </div>
-      </div>
+      <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<PokemonList />} />
+    <Route path="/pokemon/:id" element={<PokemonDetails />} />
+    </Routes>
+      </BrowserRouter>
     </div>
   );
 }

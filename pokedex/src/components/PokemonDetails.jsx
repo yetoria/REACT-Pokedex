@@ -28,4 +28,4 @@ const PokemonDetails = ({ pokemonId }) => {
     );
   };
 
-  export default PokemonDetails;
+export default PokemonDetails;
